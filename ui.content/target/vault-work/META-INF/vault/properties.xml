@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>fios - UI content</comment>
+<entry key="createdBy">dhirajkumar.g</entry>
+<entry key="name">fios.ui.content</entry>
+<entry key="created">2018-10-30T07:39:18.323+0530</entry>
+<entry key="groupId">com.fios</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">fios</entry>
+<entry key="description">UI content package for fios</entry>
+<entry key="artifactId">fios.ui.content</entry>
+<entry key="path">/etc/packages/fios/fios.ui.content.zip</entry>
+</properties>
