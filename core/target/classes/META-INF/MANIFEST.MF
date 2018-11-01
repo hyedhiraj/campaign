@@ -1,13 +1,23 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1540865346396
-Build-Jdk: 1.8.0_31
-Built-By: dhirajkumar.g
+Bnd-LastModified: 1541093101139
+Build-Jdk: 1.8.0_112
+Built-By: amit.y.kumar.singh
+Bundle-ClassPath: .,gson-2.6.2.jar,commons-lang3-3.4.jar
 Bundle-Description: Core bundle for fios
 Bundle-ManifestVersion: 2
 Bundle-Name: fios - Core
 Bundle-SymbolicName: com.fios.core
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
-Import-Package: javax.inject;version="0.0.0"
+Embed-Dependency: gson,commons-lang3
+Embedded-Artifacts: gson-2.6.2.jar;g="com.google.code.gson";a="gson";v="
+ 2.6.2",commons-lang3-3.4.jar;g="org.apache.commons";a="commons-lang3";v
+ ="3.4"
+Export-Package: com.fios.bean;version="1.0.0",com.fios.sightly.use;versi
+ on="1.0.0";uses:="com.adobe.cq.sightly,com.fios.bean"
+Import-Package: com.adobe.cq.sightly;version="[3.1,4)",com.fios.bean;ver
+ sion="[1.0,2)",org.apache.sling.api.resource;version="[2.10,3)",org.slf
+ 4j;version="[1.5,2)",javax.inject;version="0.0.0"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Sling-Model-Packages: com.fios.core
 Tool: Bnd-3.3.0.201609221906

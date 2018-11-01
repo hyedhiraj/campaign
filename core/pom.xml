@@ -53,6 +53,7 @@
                         <Sling-Model-Packages>
                             com.fios.core
                         </Sling-Model-Packages>
+                        <Embed-Dependency>gson,commons-lang3</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
@@ -106,6 +107,15 @@
         <dependency>
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
         </dependency>
     </dependencies>
 </project>
