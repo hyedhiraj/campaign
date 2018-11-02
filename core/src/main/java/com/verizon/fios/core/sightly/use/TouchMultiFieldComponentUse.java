@@ -29,7 +29,7 @@ public class TouchMultiFieldComponentUse extends WCMUsePojo {
 	private List<TouchMultiFieldBean> setMultiFieldItems() {
 
 		try {
-			String[] itemsProps = getProperties().get("lists", String[].class);
+			String[] itemsProps = getProperties().get("links", String[].class);
 			if (itemsProps != null) {
 
 				JsonParser parser = new JsonParser();

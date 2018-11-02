@@ -4,7 +4,7 @@
 <comment>fios-crm - UI apps</comment>
 <entry key="createdBy">dhirajkumar.g</entry>
 <entry key="name">fios-crm.ui.apps</entry>
-<entry key="created">2018-11-02T14:14:59.463+0530</entry>
+<entry key="created">2018-11-02T15:51:07.685+0530</entry>
 <entry key="groupId">com.verizon.fios</entry>
 <entry key="version">1.0-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>
