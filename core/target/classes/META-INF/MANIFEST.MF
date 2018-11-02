@@ -1,23 +1,45 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1541093101139
-Build-Jdk: 1.8.0_112
-Built-By: amit.y.kumar.singh
-Bundle-ClassPath: .,gson-2.6.2.jar,commons-lang3-3.4.jar
-Bundle-Description: Core bundle for fios
+Bnd-LastModified: 1541148291603
+Build-Jdk: 1.8.0_31
+Built-By: dhirajkumar.g
+Bundle-ClassPath: .,gson-2.6.2.jar
+Bundle-Description: Core bundle for fios-crm
 Bundle-ManifestVersion: 2
-Bundle-Name: fios - Core
-Bundle-SymbolicName: com.fios.core
+Bundle-Name: fios-crm - Core
+Bundle-SymbolicName: com.verizon.fios.crm.core
 Bundle-Version: 1.0.0.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Embed-Dependency: gson,commons-lang3
 Embedded-Artifacts: gson-2.6.2.jar;g="com.google.code.gson";a="gson";v="
- 2.6.2",commons-lang3-3.4.jar;g="org.apache.commons";a="commons-lang3";v
- ="3.4"
-Export-Package: com.fios.bean;version="1.0.0",com.fios.sightly.use;versi
- on="1.0.0";uses:="com.adobe.cq.sightly,com.fios.bean"
-Import-Package: com.adobe.cq.sightly;version="[3.1,4)",com.fios.bean;ver
- sion="[1.0,2)",org.apache.sling.api.resource;version="[2.10,3)",org.slf
- 4j;version="[1.5,2)",javax.inject;version="0.0.0"
-Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
-Sling-Model-Packages: com.fios.core
+ 2.6.2"
+Export-Package: com.verizon.fios.core.bean;version="1.0.0",com.verizon.f
+ ios.core.filters;version="1.0.0";uses:="javax.servlet",com.verizon.fios
+ .core.listeners;version="1.0.0";uses:="org.osgi.service.event",com.veri
+ zon.fios.core.models;version="1.0.0";uses:="javax.annotation,javax.inje
+ ct,org.apache.sling.api.resource,org.apache.sling.models.annotations",c
+ om.verizon.fios.core;version="1.0",com.verizon.fios.core.schedulers;ver
+ sion="1.0.0",com.verizon.fios.core.servlets;version="1.0.0";uses:="java
+ x.servlet,org.apache.sling.api,org.apache.sling.api.servlets",com.veriz
+ on.fios.core.sightly.use;version="1.0.0";uses:="com.adobe.cq.sightly,co
+ m.verizon.fios.core.bean"
+Import-Package: javax.inject;version="0.0.0",com.adobe.cq.sightly;versio
+ n="[3.1,4)",com.verizon.fios.core.bean;version="[1.0,2)",javax.annotati
+ on,javax.servlet,org.apache.sling.api;version="[2.3,3)",org.apache.slin
+ g.api.request;version="[2.4,3)",org.apache.sling.api.resource;version="
+ [2.10,3)",org.apache.sling.api.servlets;version="[2.2,3)",org.apache.sl
+ ing.models.annotations;version="[1.4,2)",org.apache.sling.settings;vers
+ ion="[1.3,2)",org.osgi.service.event;version="[1.3,2)",org.slf4j;versio
+ n="[1.5,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.Run
+ nable",osgi.service;objectClass:List<String>="javax.servlet.Filter",osg
+ i.service;objectClass:List<String>="javax.servlet.Servlet",osgi.service
+ ;objectClass:List<String>="org.osgi.service.event.EventHandler"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.verizon.fios.core.filters.LoggingFilter.
+ xml,OSGI-INF/com.verizon.fios.core.listeners.SimpleResourceListener.xml
+ ,OSGI-INF/com.verizon.fios.core.schedulers.SimpleScheduledTask.xml,OSGI
+ -INF/com.verizon.fios.core.servlets.SimpleServlet.xml
+Sling-Model-Packages: com.verizon.fios.core
 Tool: Bnd-3.3.0.201609221906

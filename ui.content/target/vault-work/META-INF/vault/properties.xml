@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-<comment>fios - UI content</comment>
-<entry key="createdBy">amit.y.kumar.singh</entry>
-<entry key="name">fios.ui.content</entry>
-<entry key="created">2018-11-01T22:55:09.457+0530</entry>
-<entry key="groupId">com.fios</entry>
+<comment>fios-crm - UI content</comment>
+<entry key="createdBy">dhirajkumar.g</entry>
+<entry key="name">fios-crm.ui.content</entry>
+<entry key="created">2018-11-02T14:15:02.198+0530</entry>
+<entry key="groupId">com.verizon.fios</entry>
 <entry key="version">1.0-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>
-<entry key="group">fios</entry>
-<entry key="description">UI content package for fios</entry>
-<entry key="artifactId">fios.ui.content</entry>
-<entry key="path">/etc/packages/fios/fios.ui.content.zip</entry>
+<entry key="group">fios-crm</entry>
+<entry key="description">UI content package for fios-crm</entry>
+<entry key="artifactId">fios-crm.ui.content</entry>
+<entry key="path">/etc/packages/fios-crm/fios-crm.ui.content.zip</entry>
 </properties>

@@ -16,17 +16,16 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.fios</groupId>
-    <artifactId>fios</artifactId>
+    <groupId>com.verizon.fios</groupId>
+    <artifactId>fios-crm</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <description>fios</description>
+    <description>fios-crm</description>
 
     <modules>
         <module>core</module>
         <module>ui.apps</module>
-        <module>ui.content</module>
-
+        <module>ui.content</module>       
     </modules>
 
     <properties>
@@ -542,11 +541,6 @@
                 <artifactId>junit-addons</artifactId>
                 <version>1.4</version>
                 <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.google.code.gson</groupId>
-                <artifactId>gson</artifactId>
-                <version>2.6.2</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.gson</groupId>

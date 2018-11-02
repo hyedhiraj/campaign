@@ -18,15 +18,15 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.fios</groupId>
-        <artifactId>fios</artifactId>
+        <groupId>com.verizon.fios</groupId>
+        <artifactId>fios-crm</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>fios.core</artifactId>
+    <artifactId>fios-crm.core</artifactId>
     <packaging>bundle</packaging>
-    <name>fios - Core</name>
-    <description>Core bundle for fios</description>
+    <name>fios-crm - Core</name>
+    <description>Core bundle for fios-crm</description>
     <build>
         <plugins>
             <plugin>
@@ -51,7 +51,7 @@
                         <!-- Import any version of javax.inject, to allow running on multiple versions of AEM -->
                         <Import-Package>javax.inject;version=0.0.0,*</Import-Package>
                         <Sling-Model-Packages>
-                            com.fios.core
+                            com.verizon.fios.core
                         </Sling-Model-Packages>
                         <Embed-Dependency>gson,commons-lang3</Embed-Dependency>
                     </instructions>
@@ -108,14 +108,9 @@
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
         </dependency>
-        <dependency>
+           <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.4</version>
         </dependency>
     </dependencies>
 </project>
