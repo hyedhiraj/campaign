@@ -1,11 +1,17 @@
-<h4>Menus</h4>
-${properties.links} <br/>
-
-<h4>Font Style</h4>
-${properties.fontStyle} <br/>
-
 <h4>Desktop</h4>: 
 <a href="${properties.desktopLogoLink}"><img src="${properties.desktopLogo}" alt="${properties.desktopAltText}" /></a> <br/>
 
-<h4>Mobile</h4>:
-<img src="${properties.mobileLogo}" />
+<h4>Menus</h4>
+
+${properties.links}
+<div data-sly-use.multiItem="com.verizon.fios.core.sightly.use.TouchMultiFieldComponentUse">
+
+<div data-sly-list.menu="${multiItem.submenuItems}">
+	<a href="${menu.path}" >${menu.name}</a>
+</div>
+</div>
+
+
+
+<h4>Font Style</h4>
+${properties.fontStyle} <br/>
